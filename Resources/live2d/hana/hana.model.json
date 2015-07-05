@@ -1,0 +1,68 @@
+{
+	"type": "Live2D Model Setting",
+	"name": "hana",
+	"model": "hana.moc",
+	"textures": [
+		"hana.1024/texture_00.png"
+	],
+    ,
+    "physics":"hana.physics.json",
+    "pose":"hana.pose.json",
+    "expressions":
+    [
+     {"name":"f01","file":"expressions/f01.exp.json"},
+     {"name":"f02","file":"expressions/f02.exp.json"},
+     {"name":"f03","file":"expressions/f03.exp.json"},
+     {"name":"f04","file":"expressions/f04.exp.json"}
+     ],
+	"layout":
+	{
+		"center_x":-0.09,    //横方向中心から上が+、下が-、+1 ~ -1
+        "y":1.35,   //縦方向、中心から上が+、下が-、+1.5 ~ -1.5
+		"width":2.0 //大きさ
+	},
+    "hit_areas":
+    [
+     {"name":"head", "id":"D_REF.FACE"},
+     {"name":"body", "id":"D_REF.BODY"},
+     {"name":"esa", "id":"icon_gear.png"}
+     ],
+    "motions":
+    {
+        "idle":
+        [
+         {"file":"motions/idle_01.mtn" ,"fade_in":0, "fade_out":0},
+         {"file":"motions/idle_02.mtn" ,"fade_in":0, "fade_out":0},
+         {"file":"motions/idle_03.mtn" ,"fade_in":0, "fade_out":0},
+         {"file":"motions/flickHead_00.mtn" , "fade_out":0}
+         ],
+        "pinch_in":
+        [
+//         {"file":"motions/idle_01.mtn" , "fade_out":0},
+//         {"file":"motions/idle_02.mtn" , "fade_out":0},
+//         {"file":"motions/idle_03.mtn" , "fade_out":0}
+         {"file":"motions/flickHead_00.mtn" , "fade_out":0}
+         ],
+        "pinch_out":
+        [
+//         {"file":"motions/idle_01.mtn" , "fade_out":0},
+//         {"file":"motions/idle_02.mtn" , "fade_out":0},
+//         {"file":"motions/idle_03.mtn" , "fade_out":0}
+         {"file":"motions/flickHead_00.mtn" , "fade_out":0}
+         ],
+        "shake":
+        [
+//         {"file":"motions/idle_01.mtn" ,"fade_in":500, "fade_out":200},
+//         {"file":"motions/idle_02.mtn" ,"fade_in":500, "fade_out":200},
+//         {"file":"motions/idle_03.mtn" ,"fade_in":500, "fade_out":200}
+         {"file":"motions/flickHead_00.mtn" , "fade_out":0}
+         ],
+        "flick_head":
+        [
+//         {"file":"motions/idle_01.mtn" , "fade_out":0},
+//         {"file":"motions/idle_02.mtn" , "fade_out":0},
+//         {"file":"motions/idle_03.mtn" , "fade_out":0},
+         {"file":"motions/flickHead_00.mtn" , "fade_out":0}
+         ]
+    }
+}
